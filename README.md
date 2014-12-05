@@ -33,7 +33,7 @@ phpMyAdmin is available on <http://localhost:8080/phpmyadmin/>
 MySQL server is available on `33060` port , and on `3306` in VM.
 ```js
 	login: vagrant
-	login: vagrant
+	password: vagrant
 ```
 
 Technical description
