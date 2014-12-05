@@ -24,7 +24,7 @@ Vagrant-lamp позволяет развернуть рабочую среду �
 Апач доступен по адресу <http://localhost:8080>
 
 #### phpMyAdmin
-phpMyAdmin доступен по адресу <http://localhost:8080>/phpmyadmin/
+phpMyAdmin доступен по адресу <http://localhost:8080/phpmyadmin/>
 ```js
 	Логин: vagrant
 	Пароль: vagrant
