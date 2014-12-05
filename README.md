@@ -1,6 +1,7 @@
 Vagrant LAMP
 ============
 [Описание на русском](https://github.com/SidiGi/vagrant-lamp/blob/master/README.ru.md)
+
 My default LAMP development stack configuration for Vagrant.
 
 Requirements
