@@ -67,7 +67,7 @@ a2enmod rewrite
 
 echo "--- Установка root папки---"
 sudo rm -rf ${apache_document_root}
-sudo ln -fs ${host_document_root} ${apache_document_root}
+sudo ln -fs ${host_document_root}/${project_folder_name} ${apache_document_root}
 
 echo "--- Настройка php.ini и apache2.conf ---"
 sed -i "s/error_reporting = .*/error_reporting = E_ALL/" ${php_config_file}
