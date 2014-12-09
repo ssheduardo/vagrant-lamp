@@ -15,6 +15,7 @@ Vagrant-lamp позволяет развернуть рабочую среду �
 -----
 ### Начало
 	$ git clone https://github.com/SidiGi/vagrant-lamp.git
+	$ cd vagrant-lamp
 	$ vagrant up
 
 
