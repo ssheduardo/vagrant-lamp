@@ -14,6 +14,7 @@ Use
 -----
 ### Begin
 	$ git clone https://github.com/SidiGi/vagrant-lamp.git
+	$ cd vagrant-lamp
 	$ vagrant up
 
 
