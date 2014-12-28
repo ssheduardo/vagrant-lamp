@@ -109,3 +109,8 @@ service mysql restart
 #sudo -u vagrant -H sh -c "npm install"
 #sudo -u vagrant -H sh -c "bower install -s"
 #sudo -u vagrant -H sh -c "gulp"
+
+#uncomment to setting timezone
+#echo "Setting Timezone to $1"
+#sudo ln -sf /usr/share/zoneinfo/$1 /etc/localtime
+
