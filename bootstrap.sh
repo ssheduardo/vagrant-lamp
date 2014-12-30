@@ -52,6 +52,7 @@ apt-get -qq update
 
 echo "--- Установка PHP ---"
 apt-get install -y php5 libapache2-mod-php5 php5-curl php5-gd php5-mcrypt php5-mysql php-apc
+php5enmod mcrypt
 
 echo "--- Установка и конфигурация xDebug ---"
 apt-get install -y php5-xdebug
