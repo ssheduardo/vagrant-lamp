@@ -17,6 +17,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "forwarded_port", guest: 80, host: 8080
     config.vm.network "forwarded_port", guest: 3306, host: 33060
 
+    config.vm.provider :virtualbox do |vb|
+        # Use VBoxManage to customize the VM. For example to change memory:
+        vb.customize ["modifyvm", :id, "--memory", "384"]
+    end
+
     config.vm.synced_folder ".", "/home/vagrant"
     config.vm.provision :shell, :path => "bootstrap.sh", :args => [server_timezone]
 end
