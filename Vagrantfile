@@ -21,7 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         # Use VBoxManage to customize the VM. For example to change memory:
         vb.customize ["modifyvm", :id, "--memory", "384"]
     end
-
-    config.vm.synced_folder ".", "/home/vagrant"
+    # Set share folder permissions to 777 so that apache can write files.
+    config.vm.synced_folder ".", "/home/vagrant", mount_options: ['dmode=777','fmode=666']
     config.vm.provision :shell, :path => "bootstrap.sh", :args => [server_timezone]
 end
