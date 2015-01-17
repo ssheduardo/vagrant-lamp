@@ -22,6 +22,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--memory", "384"]
     end
     # Set share folder permissions to 777 so that apache can write files.
-    config.vm.synced_folder ".", "/home/vagrant"
+    config.vm.synced_folder "./public", "/home/vagrant/public", :mount_options => ["dmode=777", "fmode=666"]
     config.vm.provision :shell, :path => "bootstrap.sh", :args => [server_timezone]
 end
