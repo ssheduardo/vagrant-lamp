@@ -78,9 +78,6 @@ sed -i "s/display_errors = .*/display_errors = On/" ${php_config_file}
 #echo "--- Работа с Boris---"
 #sed -i "s/disable_functions = .*//" /etc/php5/cli/php.ini
 
-#Set permissions with vagrant (Error: failed to open stream: Permission denied)
-sed -i "s/www-data/vagrant/" /etc/apache2/envvars
-
 sudo sed -i 's/AllowOverride None/AllowOverride All/g' ${apache_config_file}
 
 a2enconf phpmyadmin
