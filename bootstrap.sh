@@ -95,8 +95,8 @@ service mysql restart
 
 #echo "--- Установка NodeJS и NPM ---"
 #uncomment to install NodeJS NPM
+#curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 #apt-get -y install nodejs
-#curl --silent https://npmjs.org/install.sh | sh
 
 #echo "--- Установка Gulp, Bower ---"
 #uncomment to install Gulp and Bower
