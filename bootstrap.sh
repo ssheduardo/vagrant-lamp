@@ -43,7 +43,7 @@ mysql -uroot -p${DBPASSWD} -e "CREATE DATABASE ${DBNAME}"
 mysql -uroot -p${DBPASSWD} -e "grant all privileges on $DBNAME.* to '${DBUSER}'@'localhost' identified by '${DBPASSWD}'"
 
 echo "--- Установка репозиториев ---"
-add-apt-repository ppa:ondrej/php5
+add-apt-repository ppa:ondrej/php5-5.6
 
 #uncomment to install NodeJS
 #add-apt-repository ppa:chris-lea/node.js
